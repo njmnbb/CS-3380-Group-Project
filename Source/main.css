@@ -1,0 +1,338 @@
+	* {
+		padding: 0;
+		margin: 0;
+	}
+/*Begin Font Faces*/
+	@font-face {
+		font-family: 'Oswald';
+		src: url(fonts/Oswald-Regular.ttf);
+	}
+
+	@font-face {
+		font-family: 'Signika';
+		src: url(fonts/Signika-Regular.ttf);
+	}
+
+	@font-face {
+		font-family: 'League Gothic';
+		src: url(fonts/LeagueGothic-Regular.ttf);
+	}
+/*End Font Faces*/
+
+/*Begin Body*/
+	body {
+		background-color: #C5BD99;
+	}
+/*End Body*/
+
+/*Begin Content Box*/
+	#contentContainer {
+		width: 1200px;
+		height: auto;
+		overflow: hidden;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 20px;
+		box-shadow: 0 0 10px black;
+	}
+/*End Content Box*/
+
+/*Begin Header*/
+	#header {
+		height: 200px;
+		width: auto;
+		background-color: #E6B800;
+	}
+
+	#quote {
+		position: relative;
+		bottom: 40px;
+		left: 100px;
+	}
+
+	.searchBar {
+		position: relative;
+		bottom: 22px;
+		right: 300px;
+	}
+
+	#bar {
+		height: 30px;
+		width: 400px;
+		margin-right: 5px;
+		font-size: 20px;
+	}
+
+	#loginButton {
+		position: relative;
+		bottom: 200px;
+		left: 950px;
+		border: 0 none;
+		margin: 2px;
+		border-radius: 2px;
+		padding: 5px;
+		font-size: large;
+		cursor: pointer;	
+	}
+
+	#header li {
+		display: block;
+	}
+
+	.login {
+		height: 25px;
+		width: 180px;
+		position: relative;
+		bottom: 200px;
+		left: 950px;
+		margin: 2px;
+		font-size: 20px;
+		font-family: 'Signika';
+	}
+/*End Header*/
+
+/*Begin Navigation Bar*/
+	#menuBar ul {
+		list-style: none;
+		background-color: #7C7C7C;
+		text-align: center;
+		padding-top: 15px;
+		padding-bottom: -4px;
+		overflow: hidden;
+		width: auto;
+		height: 50px;
+	}
+
+	#menuBar li {
+		height: 50px;
+		margin-left: -4px;
+		/*margin-right: 10px;*/
+		display: inline;
+		font-size: x-large;
+	}
+
+	#menuBar a {
+		height: 50px;
+		padding: 20px;
+		width: auto;
+		color: white;
+		text-decoration: none;
+		font-family: 'Signika';
+	}
+
+	#menuBar a:hover {
+		background-color: #660000;
+	}
+/*End Navigation Bar*/
+
+/*Begin Content*/
+	#content {
+		height: auto;
+		width: auto;
+		background-color: #E6E6E6;
+		padding: 15px;
+	}
+
+	#content h1 {
+		font-family: 'League Gothic';
+		font-size: 70px;
+	}
+
+	#content p {
+		font-family: 'Verdana';
+		font-size: 30px;
+	}
+
+	div#tableContainer {
+		font-family: "Verdana";
+		letter-spacing: 0.5px;
+		font-size: 15px;
+    	overflow:auto; 
+    	margin-left: auto;
+    	margin-right: auto;
+    	width: 900px;
+    	height: 600px;
+    	display: inline-block;
+   }
+    
+    .faded{
+     -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+    }
+
+	@keyframes fadein {
+	    from { opacity: 0; }
+	    to   { opacity: 1; }
+	}
+
+	/* Firefox < 16 */
+	@-moz-keyframes fadein {
+	    from { opacity: 0; }
+	    to   { opacity: 1; }
+	}
+
+	/* Safari, Chrome and Opera > 12.1 */
+	@-webkit-keyframes fadein {
+	    from { opacity: 0; }
+	    to   { opacity: 1; }
+	}
+
+	/* Internet Explorer */
+	@-ms-keyframes fadein {
+	    from { opacity: 0; }
+	    to   { opacity: 1; }
+	}
+
+	/* Opera < 12.1 */
+	@-o-keyframes fadein {
+	    from { opacity: 0; }
+	    to   { opacity: 1; }
+	}
+
+	 tr:nth-child(odd){
+          background-color: rgba(230, 184, 0, 0.28);
+	}
+
+	#infopane{
+		display:inline-block;
+		margin-top: 15%;
+		float: right;
+		margin-right:70px;
+		background-color: #E6E6E6;
+        font-family: arial;
+		font-weight: bold;
+		color:#7f7f7f;
+		text-shadow:0px 1px 0px #fff;
+
+		border-radius: 10px;
+		border-width: 2px;
+		border-color: white;
+	    box-shadow: 0px 2px 1px white inset, 0px -2px 8px white, 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 8px 10px rgba(0, 0, 0, 0.1);
+		-webkit-transition:box-shadow 0.5s;
+	}
+
+	.panebutton{
+		background: #ECECEC;
+		border-radius: 15px;
+		padding: 10px 20px;
+		display: block;
+		font-family: arial;
+		font-weight: bold;
+		color:#7f7f7f;
+		text-decoration: none;
+		text-shadow:0px 1px 0px #fff;
+		border:1px solid #a7a7a7;
+		width: 80px;
+		height: 30px;
+		margin:0px auto;
+		float: left;
+		margin-top:50px;
+		box-shadow: 0px 2px 1px white inset, 0px -2px 8px white, 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 8px 10px rgba(0, 0, 0, 0.1);
+		-webkit-transition:box-shadow 0.5s;
+	}
+	/*a.button i{
+		float: right;
+		margin-top: 2px;
+	}
+	*/
+	.panebutton:hover{
+		box-shadow: 0px 2px 1px white inset, 0px -2px 20px white, 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 8px 10px rgba(0, 0, 0, 0.1);
+	}
+	.panebutton:active{
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5) inset, 0px -2px 20px white, 0px 1px 5px rgba(0, 0, 0, 0.1), 0px 2px 10px rgba(0, 0, 0, 0.1);
+		background:-webkit-linear-gradient(top, #d1d1d1 0%,#ECECEC 100%);
+	}
+
+/* Begin Registration */
+	#credentials {
+		height: 30px;
+		width: 400px;
+		font-size: 20px;
+	}
+
+	#registrationButton {
+		position: relative;
+		border: 0 none;
+		margin: 2px;
+		border-radius: 2px;
+		padding: 5px;
+		font-size: large;
+		cursor: pointer;	
+	}
+
+/* Begin Userpage */
+	.userHeaders {
+		margin-top: 30px;
+		font-family: 'League Gothic';
+		font-size: 40px;
+		text-align: center;
+	}
+
+	#userTable {
+		overflow:auto;
+		font-family: "Verdana";
+    	margin-left: auto;
+    	margin-right: auto;
+    	width: auto;
+    	height: auto;
+    	display: inline-block;
+	}
+
+	#userTable td {
+		padding: 5px;
+		max-width: 250px;
+	}
+
+	iframe {
+		border: 2px dashed grey;
+	}
+
+	#userLeft {
+		float: left;
+		height: auto;
+		width: 500px;
+		text-align: center;
+	}
+
+	#userRight {
+		float: right;
+		height: auto;
+		width: 500px;
+	}
+
+/* Begin title page */
+	.titleTable {
+		overflow:auto;
+		font-family: "Verdana";
+    	margin-left: auto;
+    	margin-right: auto;
+    	width: auto;
+    	height: auto;
+    	display: inline-block;
+    	border: 2px dashed grey;
+	}
+
+	.titleTable td {
+		padding: 5px;
+		text-align: center;
+		min-width: 250px;
+		max-width: 250px;
+	}
+
+	#favoritesPercentage {
+		height: auto;
+		width: auto;
+		float: right;
+		overflow: hidden;
+	}
+
+	#like {
+		color: green;
+	}
+
+	#dislike {
+		color: red;
+	}
